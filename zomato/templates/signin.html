@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href={% static 'css/sign.css' %} />
+  </head>
+  <body>
+    <form class="signContainer" action='login' method='post'>
+      {% csrf_token %}
+      <span class="title"><p>Fusion Food</p></span>
+      <div class="textFields">
+        <div class="textInput">
+            <input
+                class="text"
+                type="email"
+                name="email"
+                placeholder="Email"
+            />
+        </div>
+      </div>
+      <div class="textFields">
+        <div class="textInput">
+          <input
+            class="text"
+            type="password"
+            name="pass"
+            placeholder="Password"  
+          />
+        </div>
+      </div>
+      <input type='submit' id="submitButton" value='Sign In'/>
+
+      <div class="register" onclick="location.href='{% url 'signup' %}'">
+        <p>New User? Register...!</p>
+      </div>
+    </form>
+
+    {% comment %}
+    <script src={% static 'js/contact.js' %}></script>
+    <script src="js/openFile.js"></script>
+    {% endcomment %}
+  </body>
+</html>

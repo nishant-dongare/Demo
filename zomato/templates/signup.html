@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href={% static 'css/sign.css' %}/>
+  </head>
+  <body>
+    <form class="signContainer" action='register' method='post'>
+      {% csrf_token %}
+      <span class="title"><p>Fusion Food</p></span>
+      <div class="fields">
+        <input
+          class="textfield"
+          type="email"
+          name="e"
+        />
+        <span class="placeholder">Email id</span>
+      </div>
+      <div class="fields">
+          <input
+            class="textfield"
+            type="phone2numeric"
+          />
+        <span class="placeholder">Phone Number</span>
+      </div>
+      <div class="fields">
+        <input
+          class="textfield"
+          type="password"
+        />
+        <span class="placeholder">Password</span>
+      </div>
+      <div class="fields">
+        <input
+          class="textfield"
+          type="password"
+          name="p"
+        />
+        <span class="placeholder"> Confirm Password</span>
+      </div>
+
+      <input type='submit' value='Sign Up' id="submitButton">
+
+      <div class="register" onclick="location.href='{% url 'signin' %}'">
+        <p>Already a User? Sign In.</p>
+      </div>
+    </form>
+
+    <script src={% static "js/contact.js" %}></script>
+  </body>
+</html>
