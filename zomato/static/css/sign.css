@@ -132,14 +132,17 @@ html {
 }
 
 /* PlaceHolder */
-.placeholder span {
+.fields label {
   padding-left: 10px;
   color: lightslategrey;
   background: transparent;
+  position: absolute;
+  pointer-events: none;
   transition: 0.5ms;
 }
 
-.fields .text input:focus ~ .textfield,
-.fields .text input:valid ~ .textfield {
-  transform: translate(10px, 30px);
+.textfield:focus ~ label,
+.textfield input:valid ~ label {
+  color: rgb(241, 119, 140);
+  transform: translate(-10px, -30px);
 }

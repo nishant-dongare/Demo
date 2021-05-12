@@ -22,7 +22,7 @@ if(n==0):
   e = input('Enter email')
   p = input('Enter password')
   try:
-    user = auth.current_user
+    #user = auth.current_user
     auth.sign_in_with_email_and_password(e,p)
     #uid=user['localId']
     print("Email Verified")

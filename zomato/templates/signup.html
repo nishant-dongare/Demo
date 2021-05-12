@@ -18,21 +18,21 @@
           type="email"
           name="e"
         />
-        <span class="placeholder">Email id</span>
+        <label>Email id</label>
       </div>
       <div class="fields">
           <input
             class="textfield"
             type="phone2numeric"
           />
-        <span class="placeholder">Phone Number</span>
+        <label>Phone Number</label>
       </div>
       <div class="fields">
         <input
           class="textfield"
           type="password"
         />
-        <span class="placeholder">Password</span>
+        <label>Password</label>
       </div>
       <div class="fields">
         <input
@@ -40,9 +40,9 @@
           type="password"
           name="p"
         />
-        <span class="placeholder"> Confirm Password</span>
+        <label> Confirm Password</label>
       </div>
-
+      <label id='required' required=""></label>
       <input type='submit' value='Sign Up' id="submitButton">
 
       <div class="register" onclick="location.href='{% url 'signin' %}'">
