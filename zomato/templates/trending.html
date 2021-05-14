@@ -15,13 +15,10 @@
           <!-- Search city and cuisine bar -->
           <div class="searchCity">
             <div id="city">
-              <img id="location" src="icons/room-24px.svg" />
+              <img id="location" src={% static 'icons/room-24px.svg' %} />
               <input id="cityText" type="text" placeholder="New York" />
-              <img
-                id="dropDownArrow"
-                class="dArrow"
-                src="icons/arrow_drop_down-24px.svg"
-              />
+              <img id="dropDownArrow" class="dArrow" src={% static
+              'icons/arrow_drop_down-24px.svg' %} />
             </div>
             <p id="separator">|</p>
             <div id="dish">
@@ -84,7 +81,7 @@
             onmouseout="disappearBoorkmark(0)"
             onclick="openFile('dish.html')"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/7/55907/5b1dd73d2d1722419d2152807950c320.jpg?output-format=webp&fit=around|318.75:231.25&crop=318.75:231.25;*,*"
@@ -157,10 +154,11 @@
             onmouseout="disappearBoorkmark(4)"
             onclick="openFile('dish.html')"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
-            <img class="imgClass" src="img/collections/trending/cards/e.jpg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
+            <img class="imgClass" src={% static
+            'img/collections/trending/cards/e.jpg' %} />
             <div class="cardText">Lorem Ipsum</div>
-            <img class="cardStar" src="icons/rating_star.svg" />
+            <img class="cardStar" src={% static 'icons/rating_star.svg' %} />
             <div class="cardRatings">3.9</div>
             <div class="cardAddress">
               consectetur adipiscing elit <br />
