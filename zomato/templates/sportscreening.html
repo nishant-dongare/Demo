@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/trending.css" />
+    <link rel="stylesheet" href={% static 'css/trending.css' %} />
   </head>
   <body>
     <div id="mainBody">
@@ -17,13 +17,10 @@
             <!-- Search city and cuisine bar -->
             <div class="searchCity">
               <div id="city">
-                <img id="location" src="icons/room-24px.svg" />
+                <img id="location" src={% static 'icons/room-24px.svg' %} />
                 <input id="cityText" type="text" placeholder="New York" />
-                <img
-                  id="dropDownArrow"
-                  class="dArrow"
-                  src="icons/arrow_drop_down-24px.svg"
-                />
+                <img id="dropDownArrow" class="dArrow" src={% static
+                'icons/arrow_drop_down-24px.svg' %} />
               </div>
               <p id="separator">|</p>
               <div id="dish">
@@ -32,7 +29,7 @@
                   type="text"
                   placeholder="Search for restaurant, cuisine or a dish"
                 />
-                <img id="searchIcon" src="icons/search.svg" />
+                <img id="searchIcon" src={% static 'icons/search.svg' %} />
               </div>
             </div>
 
@@ -81,9 +78,9 @@
             class="cards"
             onmouseover="displayBookmark(0)"
             onmouseout="disappearBoorkmark(0)"
-            onclick="openFile('dish.html')"
+            onclick="location.href='{% url 'dish' %}'"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/5/19189145/038ab2b3e8c6a0d5364f0596d43ba3e0_top_thumb_620_314.jpg"
@@ -100,15 +97,15 @@
             class="cards"
             onmouseover="displayBookmark(1)"
             onmouseout="disappearBoorkmark(1)"
-            onclick="openFile('dish.html')"
+            onclick="location.href='{% url 'dish' %}'"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/1/19203051/d94d7912a5205d1c967f26ccf1b88913_top_thumb_620_314.jpg"
             />
             <div class="cardText">Lorem Ipsum</div>
-            <img class="cardStar" src="icons/rating_star.svg" />
+            <img class="cardStar" src={% static 'icons/rating_star.svg' %} />
             <div class="cardRatings">4.6</div>
             <div class="cardAddress">
               consectetur adipiscing elit <br />
@@ -119,15 +116,15 @@
             class="cards"
             onmouseover="displayBookmark(2)"
             onmouseout="disappearBoorkmark(2)"
-            onclick="openFile('dish.html')"
+            onclick="location.href='{% url 'dish' %}'"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/2/19305752/9e02e936c13c1e9f26ee780c1e32dcb6_top_thumb_620_314.jpg"
             />
             <div class="cardText">Lorem Ipsum</div>
-            <img class="cardStar" src="icons/rating_star.svg" />
+            <img class="cardStar" src={% static 'icons/rating_star.svg' %} />
             <div class="cardRatings">3.8</div>
             <div class="cardAddress">
               consectetur adipiscing elit <br />
@@ -138,15 +135,15 @@
             class="cards"
             onmouseover="displayBookmark(3)"
             onmouseout="disappearBoorkmark(3)"
-            onclick="openFile('dish.html')"
+            onclick="location.href='{% url 'dish' %}'"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/2/18580202/6b33a2c328d013dd77ca14d810aa53de_top_thumb_620_314.jpg"
             />
             <div class="cardText">Lorem Ipsum</div>
-            <img class="cardStar" src="icons/rating_star.svg" />
+            <img class="cardStar" src={% static 'icons/rating_star.svg' %} />
             <div class="cardRatings">4.2</div>
             <div class="cardAddress">
               consectetur adipiscing elit <br />
@@ -158,15 +155,15 @@
             class="cards"
             onmouseover="displayBookmark(4)"
             onmouseout="disappearBoorkmark(4)"
-            onclick="openFile('dish.html')"
+            onclick="location.href='{% url 'dish' %}'"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/4/19132734/8ce4c5e821b5a1fc1493617709fa96cf_top_thumb_620_314.jpg"
             />
             <div class="cardText">Lorem Ipsum</div>
-            <img class="cardStar" src="icons/rating_star.svg" />
+            <img class="cardStar" src={% static 'icons/rating_star.svg' %} />
             <div class="cardRatings">3.9</div>
             <div class="cardAddress">
               consectetur adipiscing elit <br />
@@ -177,15 +174,15 @@
             class="cards"
             onmouseover="displayBookmark(5)"
             onmouseout="disappearBoorkmark(5)"
-            onclick="openFile('dish.html')"
+            onclick="location.href='{% url 'dish' %}'"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/1/19355061/0b60facc1e9837300612faf6fdd324b5_top_thumb_620_314.jpg"
             />
             <div class="cardText">Lorem Ipsum</div>
-            <img class="cardStar" src="icons/rating_star.svg" />
+            <img class="cardStar" src={% static 'icons/rating_star.svg' %} />
             <div class="cardRatings">3.2</div>
             <div class="cardAddress">
               consectetur adipiscing elit <br />
@@ -196,15 +193,15 @@
             class="cards"
             onmouseover="displayBookmark(6)"
             onmouseout="disappearBoorkmark(6)"
-            onclick="openFile('dish.html')"
+            onclick="location.href='{% url 'dish' %}'"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/8/18601058/774074b89894e612f6b61b07fd9a8c2a_top_thumb_620_314.jpg"
             />
             <div class="cardText">Lorem Ipsum</div>
-            <img class="cardStar" src="icons/rating_star.svg" />
+            <img class="cardStar" src={% static 'icons/rating_star.svg' %} />
             <div class="cardRatings">4.3</div>
             <div class="cardAddress">
               consectetur adipiscing elit <br />
@@ -215,15 +212,15 @@
             class="cards"
             onmouseover="displayBookmark(7)"
             onmouseout="disappearBoorkmark(7)"
-            onclick="openFile('dish.html')"
+            onclick="location.href='{% url 'dish' %}'"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/5/19231655/1c5399018a47de1010b5994d5e541ad5_top_thumb_620_314.jpg"
             />
             <div class="cardText">Lorem Ipsum</div>
-            <img class="cardStar" src="icons/rating_star.svg" />
+            <img class="cardStar" src={% static 'icons/rating_star.svg' %} />
             <div class="cardRatings">4.6</div>
             <div class="cardAddress">
               consectetur adipiscing elit <br />
@@ -235,15 +232,15 @@
             class="cards"
             onmouseover="displayBookmark(8)"
             onmouseout="disappearBoorkmark(8)"
-            onclick="openFile('dish.html')"
+            onclick="location.href='{% url 'dish' %}'"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/8/18578798/fe8fdb1cea9f0cd9eddbed010fc39dd4_top_thumb_620_314.jpg"
             />
             <div class="cardText">Lorem Ipsum</div>
-            <img class="cardStar" src="icons/rating_star.svg" />
+            <img class="cardStar" src={% static 'icons/rating_star.svg' %} />
             <div class="cardRatings">3.5</div>
             <div class="cardAddress">
               consectetur adipiscing elit <br />
@@ -254,15 +251,15 @@
             class="cards"
             onmouseover="displayBookmark(9)"
             onmouseout="disappearBoorkmark(9)"
-            onclick="openFile('dish.html')"
+            onclick="location.href='{% url 'dish' %}'"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/0/18664740/4fe0618600b63c1c2ecdaf6e58c925e0_top_thumb_620_314.jpg"
             />
             <div class="cardText">Lorem Ipsum</div>
-            <img class="cardStar" src="icons/rating_star.svg" />
+            <img class="cardStar" src={% static 'icons/rating_star.svg' %} />
             <div class="cardRatings">3.6</div>
             <div class="cardAddress">
               consectetur adipiscing elit <br />
@@ -273,15 +270,15 @@
             class="cards"
             onmouseover="displayBookmark(10)"
             onmouseout="disappearBoorkmark(10)"
-            onclick="openFile('dish.html')"
+            onclick="location.href='{% url 'dish' %}'"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/2/19436842/e4cc0d7d5af612205834d1eb65868e12_top_thumb_620_314.jpg"
             />
             <div class="cardText">Lorem Ipsum</div>
-            <img class="cardStar" src="icons/rating_star.svg" />
+            <img class="cardStar" src={% static 'icons/rating_star.svg' %} />
             <div class="cardRatings">4.3</div>
             <div class="cardAddress">
               consectetur adipiscing elit <br />
@@ -292,15 +289,15 @@
             class="cards"
             onmouseover="displayBookmark(11)"
             onmouseout="disappearBoorkmark(11)"
-            onclick="openFile('dish.html')"
+            onclick="location.href='{% url 'dish' %}'"
           >
-            <img class="cardBookmark" src="icons/bookmark.svg" />
+            <img class="cardBookmark" src={% static 'icons/bookmark.svg' %} />
             <img
               class="imgClass"
               src="https://b.zmtcdn.com/data/pictures/5/18800355/613a36995c942c6d255a01f7f05f635e_top_thumb_620_314.jpg"
             />
             <div class="cardText">Lorem Ipsum</div>
-            <img class="cardStar" src="icons/rating_star.svg" />
+            <img class="cardStar" src={% static 'icons/rating_star.svg' %} />
             <div class="cardRatings">4.3</div>
             <div class="cardAddress">
               consectetur adipiscing elit <br />
@@ -589,7 +586,8 @@
               <p class="countryName">India</p>
             </div>
             <div class="fOption">
-              <img class="countryFlag" src="icons/language-black-18dp.svg" />
+              <img class="countryFlag" src={% static
+              'icons/language-black-18dp.svg' %} />
               <p class="countryName">English</p>
             </div>
           </div>
@@ -598,13 +596,17 @@
         <div id="footerLinksContainer">
           <div class="footerLinksCards">
             <div class="linksHead">COMPANY</div>
-            <div class="links" onclick="openFile('aboutus.html')">
+            <div class="links" onclick="location.href='{% url 'aboutus' %}'">
               Who we Are
             </div>
             <div class="links">Blog</div>
-            <div class="links" onclick="openFile('career.html')">Careers</div>
+            <div class="links" onclick="location.href='{% url 'career' %}'">
+              Careers
+            </div>
             <div class="links">Report Fraud</div>
-            <div class="links" onclick="openFile('contact.html')">Contact</div>
+            <div class="links" onclick="location.href='{% url 'contact' %}'">
+              Contact
+            </div>
           </div>
 
           <div class="footerLinksCards">
@@ -636,9 +638,11 @@
           <div class="footerLinksCards">
             <div class="linksHead">SOCIAL LINKS</div>
             <div id="socialMediaLinks">
-              <img class="socialIcon" src="icons/black_facebook_icon.png" />
-              <img class="socialIcon" src="icons/white_tweeter_icon.svg" />
-              <img class="socialIcon" src="icons/black_instagram_icon.png" />
+              <img class="socialIcon" src={% static
+              'icons/black_facebook_icon.png' %} /> <img class="socialIcon"
+              src={% static 'icons/white_tweeter_icon.svg' %} /> <img
+              class="socialIcon" src={% static 'icons/black_instagram_icon.png'
+              %} />
             </div>
             <div id="download">
               <img
