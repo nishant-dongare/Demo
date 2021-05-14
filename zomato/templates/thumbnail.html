@@ -167,11 +167,11 @@
                         <p class="searchText">Search in...</p>
                         <div id="leftSearchBar">
                             <div id="left">
-                                <img class="icon" src="icons/cursor.svg">
+                                <img class="icon" src={% static 'icons/cursor.svg' %} >
                                 <input type="text" id="placeSearchText" placeholder="Please select your delivery location..."></p>
                             </div>
                             <div id="right">
-                                <img id="locIcon" src="icons/current_location.svg">
+                                <img id="locIcon" src={% static 'icons/current_location.svg' %} >
                             </div>
                         </div>
                     </div>
@@ -179,24 +179,24 @@
                     <div id="rightPart">
                         <p class="searchText">Search in...</p>
                         <div id="rightSearchBar">
-                            <img class="icon" src="icons/search.svg">
+                            <img class="icon" src={% static 'icons/search.svg' %} >
                             <input type="text" id="restaurantSearchText" placeholder="Search for restaurants and cuisines..."></input>
                         </div>
                     </div>
                 </div>
 
                 <div id="bottomConatiner">
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/buffalo-wings-77108e8.jpg?quality=90&resize=500%2C454">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Biryani</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg"><p class="ratings">4.5(3000 reviews)</p>
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} ><p class="ratings">4.5(3000 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -214,17 +214,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://static01.nyt.com/images/2019/12/11/dining/05best-hungry-dish4/05best-hungry-dish4-superJumbo-v2.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.0(2300 reviews)</p>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %} ><p class="ratings">4.0(2300 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -242,17 +242,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://media.timeout.com/images/105523407/image.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">3.9(2100 reviews)</p>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %} ><p class="ratings">3.9(2100 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -270,17 +270,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://i.pinimg.com/originals/ff/16/39/ff16395bb0cd04540ab2fd1708bda28b.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.0(2250 reviews)</p>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %} ><p class="ratings">4.0(2250 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -298,17 +298,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://spoonuniversity.com/wp-content/uploads/sites/75/2016/03/FINISHED-peter-luger-steakhouse-porterhouse-new-york.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Chicken Wings</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg"><p class="ratings">4.6(3040 reviews)</p>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} ><p class="ratings">4.6(3040 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -326,17 +326,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://media.timeout.com/images/104098973/image.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">3.4(1800 reviews)</p>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %} ><p class="ratings">3.4(1800 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -354,17 +354,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://media1.popsugar-assets.com/files/thumbor/KCgGQlZpDZ0G2-gRBu5NZgmEs7U/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2020/05/15/814/n/1922195/abf5ba405ebee04bcf00b5.23483455_/i/best-new-york-city-food-deliveries-nationwide.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">3.8(2080 reviews)</p>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %} ><p class="ratings">3.8(2080 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -382,17 +382,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://149349412.v2.pressablecdn.com/wp-content/uploads/2017/01/Cherry-Sour-and-Duck-Papperadelle-Woodford-Reserve-Grayze-Cocktail-Conference-Paired-Dinner-Hero-1000x683.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">3.8(2080 reviews)</p>
+                                    <img class="stars" src= {% static 'icons/red_star.svg ' %}>
+                                    <img class="stars" src= {% static 'icons/red_star.svg ' %}>
+                                    <img class="stars" src= {% static 'icons/red_star.svg ' %}>
+                                    <img class="stars" src= {% static 'icons/grey_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/grey_star.svg' %} ><p class="ratings">3.8(2080 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -410,17 +410,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://mk0pourmybeer0ij0snd.kinstacdn.com/wp-content/uploads/2020/01/beer-filled-mug-on-table-1552630-e1578326365853-768x576.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.2(2400 reviews)</p>
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/grey_star.svg' %} ><p class="ratings">4.2(2400 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -438,17 +438,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://media.timeout.com/images/104098214/630/472/image.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.1(2320 reviews)</p>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/grey_star.svg' %} ><p class="ratings">4.1(2320 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -466,17 +466,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://www.disneyfoodblog.com/wp-content/uploads/2019/04/Black-Tap-Craft-Burgers-and-Shakes-april-2019-crazyshakes-crazy-shakes-cake-shake-bam-bam-cookie-shake-3-450x600.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg"><p class="ratings">4.5(3090 reviews)</p>
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} ><p class="ratings">4.5(3090 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -494,17 +494,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://img.theculturetrip.com/wp-content/uploads/2017/10/recession-special-at-grays-papaya-l-david-joyce-flickr.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.3(2500 reviews)</p>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %}><p class="ratings">4.3(2500 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -522,17 +522,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://d2rf0detuhmti.cloudfront.net/wp-content/uploads/2019/08/woodford-pair-share-perch-restaurant-richmond-01-2.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.4(2610 reviews)</p>
+                                    <img class="stars" src= {% static 'icons/red_star.svg' %} >
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %}><p class="ratings">4.4(2610 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -550,17 +550,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://www.gobourbon.com/wp-content/uploads/2016/12/WR-editedpostLR-2.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.4(2610 reviews)</p>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %}><p class="ratings">4.4(2610 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -578,17 +578,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_430,h_246/https://worldoffoodanddrink.worldtravelguide.net/wp-content/uploads/sites/3/2017/11/shu-New-York-SoulFood-Chicken-and-waffles-206484358-Joshua-Resnick-430x246.jpg">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">4.3(2510 reviews)</p>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %}><p class="ratings">4.3(2510 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
@@ -606,17 +606,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orderCard" onclick="openFile('dish.html')">
+                    <div class="orderCard" onclick="location.href='{% url 'dish' %}'">
                         <div class="top">
                             <img class="cardImg" src="https://www.gannett-cdn.com/media/2016/10/02/USATODAY/USATODAY/636110376059575147-Toloache.JPG?width=2560">
                             <div class="cardDesc">
                                 <h1 class="cardHead">Loren Ipsum</h1>
                                 <div class="review">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/red_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg">
-                                    <img class="stars" src="icons/grey_star.svg"><p class="ratings">3.5(2510 reviews)</p>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/red_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %}>
+                                    <img class="stars" src={% static 'icons/grey_star.svg' %}><p class="ratings">3.5(2510 reviews)</p>
                                 </div>
                                 <p class="midText">Class aptent taciti sociosqu</p>
                                 <p class="midText">$2 venenatis metus</p>
