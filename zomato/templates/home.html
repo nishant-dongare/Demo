@@ -93,7 +93,7 @@
             New York, based on trends
           </p>
           <div id="collectionsCardContainer">
-            <div class="collectionsCards" onclick="openFile('trending.html')">
+            <div class="collectionsCards" onclick="location.href='{% url 'trending' %}'">
               <img
                 class="collectionsImgClass"
                 src="https://myburbank.com/wp-content/uploads/2017/11/BA_303_Offers_Indulge_Ribs.jpg"
@@ -106,7 +106,7 @@
                 src={% static "icons/arrow_drop_down-white-18dp.svg" %}
               />
             </div>
-            <div class="collectionsCards" onclick="openFile('bestofcity.html')">
+            <div class="collectionsCards" onclick="location.href='{% url 'bestofcity' %}'">
               <img
                 class="collectionsImgClass"
                 src="https://img-de.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fstatic-ind-elliman-newyorkcity-production.gtsstatic.net%2Fresources%2Fsiteresources%2Fmy%20folder%2Fny-statue%20copy.jpg&option=N&w=1200&fallbackimageurl=https%3A%2F%2Fstatic-ind-elliman-newyorkcity-production.gtsstatic.net%2Fresources%2Fsiteresources%2Fcommonresources%2Fimages%2Fnophoto%2Fde_website_holder_400x300.jpg"
@@ -122,8 +122,7 @@
             </div>
             <div
               class="collectionsCards"
-              {% comment %} onclick="openFile('sportscreening.html')" {% endcomment %}
-            >
+              onclick="location.href='{% url 'sportscreening' %}'">
               <img
                 class="collectionsImgClass"
                 src="https://cdn.vox-cdn.com/thumbor/YrJ7ZO410Qr8gwkpm5eFplsm4lk=/0x0:1200x800/1200x800/filters:focal(504x304:696x496)/cdn.vox-cdn.com/uploads/chorus_image/image/64576764/1803002.0.jpg"
@@ -139,7 +138,7 @@
             </div>
             <div
               class="collectionsCards"
-              onclick="openFile('microbreweries.html')"
+              onclick="location.href='{% url 'microbreweries' %}'"
             >
               <img
                 class="collectionsImgClass"
@@ -535,13 +534,13 @@
         <div id="footerLinksContainer">
           <div class="footerLinksCards">
             <div class="linksHead">COMPANY</div>
-            <div class="links" onclick="openFile('aboutus.html')">
+            <div class="links" onclick="location.href='{% url 'aboutus' %}'">
               Who we Are
             </div>
             <div class="links">Blog</div>
-            <div class="links" onclick="openFile('career.html')">Careers</div>
+            <div class="links" onclick="location.href='{% url 'career' %}'">Careers</div>
             <div class="links">Report Fraud</div>
-            <div class="links" onclick="openFile('contact.html')">Contact</div>
+            <div class="links" onclick="location.href='{% url 'contact' %}'">Contact</div>
           </div>
 
           <div class="footerLinksCards">

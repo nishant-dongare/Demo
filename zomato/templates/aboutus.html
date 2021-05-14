@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel = "stylesheet" href ={% static '"css/aboutus.css"' %}">
+    <link rel = "stylesheet" href ={% static 'css/aboutus.css' %}>
   </head>
   <body>
     <div id="imgContainer">
@@ -132,10 +132,10 @@
         </div>
         <div id="slidingButton">
           <div class="slider" id="leftSlide" onclick="changeBanner(-1)">
-            <img src="icons/next.svg" />
+            <img src={% static 'icons/next.svg' %} />
           </div>
           <div class="slider" id="rightSlide" onclick="changeBanner(1)">
-            <img src="icons/next.svg" />
+            <img src={% static 'icons/next.svg' %} />
           </div>
         </div>
         <div id="bannerNav">
@@ -419,7 +419,8 @@
               <p class="countryName">India</p>
             </div>
             <div class="fOption">
-              <img class="countryFlag" src="icons/language-black-18dp.svg" />
+              <img class="countryFlag" src={% static
+              'icons/language-black-18dp.svg' %} />
               <p class="countryName">English</p>
             </div>
           </div>
@@ -430,9 +431,13 @@
             <div class="linksHead">COMPANY</div>
             <div class="links">Who we Are</div>
             <div class="links">Blog</div>
-            <div class="links" onclick="openFile('career.html')">Careers</div>
+            <div class="links" onclick="location.href='{% url 'career' %}'">
+              Careers
+            </div>
             <div class="links">Report Fraud</div>
-            <div class="links" onclick="openFile('contact.html')">Contact</div>
+            <div class="links" onclick="location.href='{% url 'contact' %}'">
+              Contact
+            </div>
           </div>
 
           <div class="footerLinksCards">
@@ -464,9 +469,11 @@
           <div class="footerLinksCards">
             <div class="linksHead">SOCIAL LINKS</div>
             <div id="socialMediaLinks">
-              <img class="socialIcon" src="icons/white_facebook_icon.svg" />
-              <img class="socialIcon" src="icons/white_instagram_icon.svg" />
-              <img class="socialIcon" src="icons/white_tweeter_icon.svg" />
+              <img class="socialIcon" src={% static
+              'icons/white_facebook_icon.svg' %} /> <img class="socialIcon"
+              src={% static 'icons/white_instagram_icon.svg' %} /> <img
+              class="socialIcon" src={% static 'icons/white_tweeter_icon.svg' %}
+              />
             </div>
             <div id="download">
               <img

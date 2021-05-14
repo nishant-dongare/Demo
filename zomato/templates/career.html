@@ -87,7 +87,7 @@
               <p class="benefitsText">Parental Leave Policy</p>
               <img
                 class="benefitsImg"
-                src="icons/arrow-down-sign-to-navigate.svg"
+                src={% static 'icons/arrow-down-sign-to-navigate.svg' %}
               />
             </div>
             <div class="hiddenDiv">
@@ -105,7 +105,7 @@
               <p class="benefitsText">No Probation and Notice Periods</p>
               <img
                 class="benefitsImg"
-                src="icons/arrow-down-sign-to-navigate.svg"
+                src= {% static 'icons/arrow-down-sign-to-navigate.svg' %}
               />
             </div>
             <div class="hiddenDiv">
@@ -121,7 +121,7 @@
               <p class="benefitsText">Medical Coverage</p>
               <img
                 class="benefitsImg"
-                src="icons/arrow-down-sign-to-navigate.svg"
+                src= {% static 'icons/arrow-down-sign-to-navigate.svg' %} 
               />
             </div>
             <div class="hiddenDiv">
@@ -138,7 +138,7 @@
               <p class="benefitsText">Period Leave</p>
               <img
                 class="benefitsImg"
-                src="icons/arrow-down-sign-to-navigate.svg"
+                src= {% static 'icons/arrow-down-sign-to-navigate.svg' %} 
               />
             </div>
             <div class="hiddenDiv">
@@ -156,7 +156,7 @@
               <p class="benefitsText">In-office Creche</p>
               <img
                 class="benefitsImg"
-                src="icons/arrow-down-sign-to-navigate.svg"
+                src= {% static 'icons/arrow-down-sign-to-navigate.svg' %} 
               />
             </div>
             <div class="hiddenDiv">
@@ -171,7 +171,7 @@
               <p class="benefitsText">In-office Psychiatrist Team</p>
               <img
                 class="benefitsImg"
-                src="icons/arrow-down-sign-to-navigate.svg"
+                src= {% static 'icons/arrow-down-sign-to-navigate.svg' %} 
               />
             </div>
             <div class="hiddenDiv">
@@ -186,7 +186,7 @@
               <p class="benefitsText">Food and Snacks</p>
               <img
                 class="benefitsImg"
-                src="icons/arrow-down-sign-to-navigate.svg"
+                src= {% static 'icons/arrow-down-sign-to-navigate.svg' %}
               />
             </div>
             <div class="hiddenDiv">
@@ -324,10 +324,10 @@
         </div>
         <div class="slidingButton">
           <div class="slider" id="leftSlide" onclick="changeBanner(-1)">
-            <img src="icons/next.svg" />
+            <img src= {% static 'icons/next.svg' %}  />
           </div>
           <div class="slider" id="rightSlide" onclick="changeBanner(1)">
-            <img src="icons/next.svg" />
+            <img src= {% static 'icons/next.svg' %} />
           </div>
         </div>
       </div>
@@ -443,7 +443,7 @@
               <p class="countryName">India</p>
             </div>
             <div class="fOption">
-              <img class="countryFlag" src="icons/language-black-18dp.svg" />
+              <img class="countryFlag" src={% static 'icons/language-black-18dp.svg' %} />
               <p class="countryName">English</p>
             </div>
           </div>
@@ -452,13 +452,13 @@
         <div id="footerLinksContainer">
           <div class="footerLinksCards">
             <div class="linksHead">COMPANY</div>
-            <div class="links" onclick="openFile('aboutus.html')">
+            <div class="links" onclick="location.href='{% url 'aboutus' %}'">
               Who we Are
             </div>
             <div class="links">Blog</div>
             <div class="links">Careers</div>
             <div class="links">Report Fraud</div>
-            <div class="links" onclick="openFile('contact.html')">Contact</div>
+            <div class="links" onclick="location.href='{% url 'contact' %}'">Contact</div>
           </div>
 
           <div class="footerLinksCards">
@@ -490,9 +490,9 @@
           <div class="footerLinksCards">
             <div class="linksHead">SOCIAL LINKS</div>
             <div id="socialMediaLinks">
-              <img class="socialIcon" src="icons/white_facebook_icon.svg" />
-              <img class="socialIcon" src="icons/white_instagram_icon.svg" />
-              <img class="socialIcon" src="icons/white_tweeter_icon.svg" />
+              <img class="socialIcon" src={% static 'icons/white_tweeter_icon.svg ' %} />
+              <img class="socialIcon" src={% static 'icons/white_instagram_icon.svg' %} />
+              <img class="socialIcon" src={% static 'icons/white_tweeter_icon.svg' %} />
             </div>
             <div id="download">
               <img
