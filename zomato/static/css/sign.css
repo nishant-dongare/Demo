@@ -106,7 +106,7 @@ html {
   display: inline-block;
   margin-bottom: 30px;
   opacity: 0;
-  float: left;
+  /* float: left; */
 }
 .invalidInput p {
   width: 200px;

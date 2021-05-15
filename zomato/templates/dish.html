@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel = "stylesheet" href ={% static '"css/dish.css' %}>
+    <link rel = "stylesheet" href ={% static 'css/dish.css' %}>
 </head>
 <body>
     <div id="mainBody">
@@ -15,19 +15,19 @@
                 <!-- Search city and cuisine bar -->
                 <div class = "searchCity">
                     <div id = "city">
-                        <img id="location" src = "icons/room-24px.svg">
+                        <img id="location" src = {% static 'icons/room-24px.svg' %}>
                         <input id = "cityText" type="text" placeholder="New York">
-                        <img id = "dropDownArrow" class = "dArrow" src="icons/arrow_drop_down-24px.svg">
+                        <img id = "dropDownArrow" class = "dArrow" src={% static 'icons/arrow_drop_down-24px.svg' %}>
                     </div>
                     <p id = "separator">|</p>
                     <div id = "dish">
                         <input id = "dishText" type="text" placeholder="Search for restaurant, cuisine or a dish">
-                        <img id = "searchIcon" src="icons/search.svg">
+                        <img id = "searchIcon" src={% static 'icons/search.svg' %}>
                     </div>
                 </div>
                 <div id = "signInUp">
-                    <p class="logSign">LOGIN</p>
-                    <p class="logSign">SIGN UP</p>
+                    <p class="logSign" onclick="location.href='{% url 'signin' %}'">LOGIN</p>
+                    <p class="logSign" onclick="location.href='{% url 'signup' %}'">SIGN UP</p>
                 </div>
                 <!-- recommendations box -->
                 <div id = "recommendations">     
@@ -126,11 +126,11 @@
                         <div id="descRight">
                             <div id="dRLeft">
                                 <div class = "starContainer">
-                                    <img src="icons/red_star.svg">
-                                    <img src="icons/red_star.svg">
-                                    <img src="icons/red_star.svg">
-                                    <img src="icons/red_star.svg">
-                                    <img src="icons/grey_star.svg">
+                                    <img src={% static 'icons/red_star.svg' %}>
+                                    <img src={% static 'icons/red_star.svg' %}>
+                                    <img src={% static 'icons/red_star.svg' %}>
+                                    <img src={% static 'icons/red_star.svg' %}>
+                                    <img src={% static 'icons/grey_star.svg' %}>
                                     <p>4.5</p>
                                 </div>
                                 <p class="reviews">Dining reviews</p>
@@ -139,11 +139,11 @@
 
                             <div id="dRRight">
                                 <div class = "starContainer">
-                                    <img src="icons/red_star.svg">
-                                    <img src="icons/red_star.svg">
-                                    <img src="icons/red_star.svg">
-                                    <img src="icons/red_star.svg">
-                                    <img src="icons/grey_star.svg">
+                                    <img src={% static 'icons/red_star.svg' %}>
+                                    <img src={% static 'icons/red_star.svg' %}>
+                                    <img src={% static 'icons/red_star.svg' %}>
+                                    <img src={% static 'icons/red_star.svg' %}>
+                                    <img src={% static 'icons/grey_star.svg' %}>
                                     <p>3.8</p>
                                 </div>
                                 <p class="reviews">Delivery reviews</p>
@@ -154,19 +154,19 @@
 
                     <div id="buttonsContainer">
                         <div  id="buttons">
-                            <img src="icons/white_outline_star.svg">
+                            <img src={% static 'icons/white_outline_star.svg' %}>
                             <p>Add Review</p>
                         </div>
                         <div class="buttons">
-                            <img src="icons/red_street-sign.svg">
+                            <img src={% static 'icons/red_street-sign.svg' %}>
                             <p>Direction</p>
                         </div>
                         <div class="buttons">
-                            <img src="icons/red_bookmark.svg">
+                            <img src={% static 'icons/red_bookmark.svg' %}>
                             <p>Bookmark</p>
                         </div>
                         <div class="buttons">
-                            <img src="icons/red_share.svg">
+                            <img src={% static 'icons/red_share.svg' %}>
                             <p>Share</p>
                         </div>
                     </div>
@@ -780,7 +780,7 @@
                             <p class="countryName">India</p>
                         </div>
                         <div class="fOption">
-                            <img class="countryFlag" src="icons/language-black-18dp.svg">
+                            <img class="countryFlag" src={% static 'icons/language-black-18dp.svg' %}>
                             <p class="countryName">English</p>
                         </div>
                     </div>
@@ -789,11 +789,11 @@
                 <div id="footerLinksContainer">
                     <div class="footerLinksCards">
                         <div class="linksHead">COMPANY</div>
-                        <div class="links" onclick="openFile('aboutus.html')">Who we Are</div>
+                        <div class="links" onclick="location.href='{% url 'aboutus' %}'">Who we Are</div>
                         <div class="links">Blog</div>
-                        <div class="links" onclick="openFile('career.html')">Careers</div>
+                        <div class="links" onclick="location.href='{% url 'career' %}'">Careers</div>
                         <div class="links">Report Fraud</div>
-                        <div class="links" onclick="openFile('contact.html')">Contact</div>
+                        <div class="links" onclick="location.href='{% url 'contact' %}'">Contact</div>
                     </div>
     
                     <div class="footerLinksCards">
@@ -825,9 +825,9 @@
                     <div class="footerLinksCards">
                         <div class="linksHead">SOCIAL LINKS</div>
                         <div id = "socialMediaLinks">
-                            <img class="socialIcon" src = "icons/white_facebook_icon.svg">
-                            <img class="socialIcon" src = "icons/white_instagram_icon.svg">
-                            <img class="socialIcon" src = "icons/white_tweeter_icon.svg">
+                            <img class="socialIcon" src = {% static 'icons/white_facebook_icon.svg' %}>
+                            <img class="socialIcon" src = {% static 'icons/white_instagram_icon.svg' %}>
+                            <img class="socialIcon" src = {% static 'icons/white_tweeter_icon.svg' %}>
                         </div>
                         <div id = "download">
                             <img href = "https://bnc.lt/download-z-android"  class = "downloadOption" src = "https://yourdolphin.com/assets/upload/google_play_badge.png">
@@ -838,7 +838,8 @@
             </div>
 </div>
     </div>
-    <script src="js/dish.js"></script>
-    <script src="js/openFile.js"></script>
+    <script src={% static 'js/site.js' %}></script>
+    <script src={% static "js/dish.js" %}></script> 
+    <script src={% static "js/openFile.js" %}></script>
 </body>
 </html>
