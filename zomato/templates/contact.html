@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
   </head>
   <body>
@@ -19,12 +19,12 @@
         <!-- Search city and cuisine bar -->
         <div class="searchCity">
           <div id="city">
-            <img id="location" src="icons/room-24px.svg" />
+            <img id="location" src={% static 'icons/room-24px.svg' %} />
             <input id="cityText" type="text" placeholder="New York" />
             <img
               id="dropDownArrow"
               class="dArrow"
-              src="icons/arrow_drop_down-24px.svg"
+              src={% static 'icons/arrow_drop_down-24px.svg' %}
             />
           </div>
           <p id="separator">|</p>
@@ -34,17 +34,17 @@
               type="text"
               placeholder="Search for restaurant, cuisine or a dish"
             />
-            <img id="searchIcon" src="icons/search.svg" />
+            <img id="searchIcon" src={% static 'icons/search.svg' %} />
           </div>
         </div>
         <div id="trendingProfile">
-          <p class="logSign">LOGIN</p>
-          <p class="logSign">SIGN UP</p>
+          <p class="logSign" onclick="location.href='{% url 'signin' %}'">LOGIN</p>
+          <p class="logSign" onclick="location.href='{% url 'signup' %}'">SIGN UP</p>
         </div>
         <!-- recommendations box -->
         <div id="recommendations">
           <div id="currentLocaion">
-            <img id="currentLocaionIcon" src="icons/\/icons8-location-64.png" />
+            <img id="currentLocaionIcon" src={% static 'icons/location.png' %} />
             <p id="currentLocationText">Detect current location</p>
           </div>
           <div id="popularText">
@@ -69,20 +69,19 @@
         <div class="form">
           <div class="textFields">
             <div class="textInput">
-              <input class="text" type="text" required />
+              <input class="formText" type="text" required />
               <div class="placeholder">
                 <p class="placeholderText">How can we help you?</p>
                 <p id="asterisk1">*</p>
               </div>
             </div>
-            <img src="icons/arrow_drop_down-24px.svg" />
+            <img src={% static 'icons/arrow_drop_down-24px.svg' %} />
           </div>
           <div class="textFields">
             <div class="textInput">
               <input
-                class="text"
+                class="formText"
                 type="text"
-                required
                 onfocus="textChanges(1, true)"
                 onblur="textChanges(1, false)"
               />
@@ -92,10 +91,12 @@
               </div>
             </div>
           </div>
+          <div class="invalidInput"><p>Invalid Name</p></div>
+
           <div class="textFields">
             <div class="textInput">
               <input
-                class="text"
+                class="formText"
                 type="text"
                 onfocus="textChanges(2, true)"
                 onblur="textChanges(2, false)"
@@ -107,10 +108,12 @@
               </div>
             </div>
           </div>
+          <div class="invalidInput"><p>Invalid Email</p></div>
+
           <div class="textFields">
             <div class="textInput">
               <input
-                class="text"
+                class="formText"
                 type="text"
                 onfocus="textChanges(3, true)"
                 onblur="textChanges(3, false)"
@@ -120,10 +123,12 @@
               </div>
             </div>
           </div>
+          <div class="invalidInput"><p>Invalid Mobile Number</p></div>
+
           <div class="textFields textArea">
             <div class="textInput">
               <input
-                class="text"
+                class="formText"
                 type="text"
                 onfocus="textChanges(4, true)"
                 onblur="textChanges(4, false)"
@@ -134,7 +139,7 @@
               </div>
             </div>
           </div>
-          <div id="submitButton">Submit feedback</div>
+          <div class="submitButton" >Submit feedback</div>
         </div>
 
         <div class="grievanceCardContainer">
@@ -351,7 +356,7 @@
               <p class="countryName">India</p>
             </div>
             <div class="fOption">
-              <img class="countryFlag" src="icons/language-black-18dp.svg" />
+              <img class="countryFlag" src={% static 'icons/language-black-18dp.svg' %} />
               <p class="countryName">English</p>
             </div>
           </div>
@@ -360,13 +365,11 @@
         <div id="footerLinksContainer">
           <div class="footerLinksCards">
             <div class="linksHead">COMPANY</div>
-            <div class="links" onclick="openFile('aboutus.html')">
-              Who we Are
-            </div>
+            <div class="links" onclick="location.href='{% url 'aboutus' %}'">Who we Are</div>
             <div class="links">Blog</div>
-            <div class="links" onclick="openFile('career.html')">Careers</div>
+            <div class="links" onclick="location.href='{% url 'career' %}'">Careers</div>
             <div class="links">Report Fraud</div>
-            <div class="links">Contact</div>
+            <div class="links" onclick="location.href='{% url 'contact' %}'">Contact</div>
           </div>
           <div class="footerLinksCards">
             <div class="linksHead">FOR FOODIES</div>
@@ -394,9 +397,9 @@
           <div class="footerLinksCards">
             <div class="linksHead">SOCIAL LINKS</div>
             <div id="socialMediaLinks">
-              <img class="socialIcon" src="icons/white_facebook_icon.svg" />
-              <img class="socialIcon" src="icons/white_instagram_icon.svg" />
-              <img class="socialIcon" src="icons/white_tweeter_icon.svg" />
+              <img class="socialIcon" src={% static 'icons/white_facebook_icon.svg' %} />
+              <img class="socialIcon" src={% static 'icons/white_instagram_icon.svg' %} />
+              <img class="socialIcon" src={% static 'icons/white_tweeter_icon.svg' %} />
             </div>
             <div id="download">
               <img

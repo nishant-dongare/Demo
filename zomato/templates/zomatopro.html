@@ -4,26 +4,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZomatoPro</title>
+    <title>Fusion Food</title>
     <link rel="stylesheet" href={% static 'css/zomatopro.css' %}/>
   </head>
   <body>
     <div id="topBar">
       <div id="topBarContent">
-        <img
-          id="trendZomatoText"
-          src="https://b.zmtcdn.com/images/zomato_white_logo_new.svg"
-        />
+        <p
+          id="trendZomatoText">
+          Fusion Food
+        </p>
 
         <!-- Search city and cuisine bar -->
         <div class="searchCity">
           <div id="city">
-            <img id="location" src="icons/room-24px.svg" />
+            <img id="location" src={% static 'icons/room-24px.svg' %} />
             <input id="cityText" type="text" placeholder="New York" />
             <img
               id="dropDownArrow"
               class="dArrow"
-              src="icons/arrow_drop_down-24px.svg"
+              src={% static 'icons/arrow_drop_down-24px.svg' %}
             />
           </div>
           <p id="separator">|</p>
@@ -33,7 +33,7 @@
               type="text"
               placeholder="Search for restaurant, cuisine or a dish"
             />
-            <img id="searchIcon" src={% static '"icons/search.svg"' %} />
+            <img id="searchIcon" src={% static 'icons/search.svg' %} />
           </div>
         </div>
 
@@ -90,22 +90,12 @@
             class="navIcon"
             src="https://www.zomato.com/images/red/pro_badge.svg"
           />
-          <p class="navText">Zomato Pro</p>
+          <p class="navText">Fusion Food Pro</p>
         </div>
       </div>
     </div>
 
     <div id="proBanner">
-      <div id="proBannerContent">
-        <img
-          id="proBannerImg"
-          src="https://b.zmtcdn.com/data/pro/514e7ddb5473b29bea0c146eb7cb0eb71596756936.png"
-        />
-        <p id="proBannerText">
-          Experience new places in your city every day and enjoy limitless
-          dining privileges!
-        </p>
-      </div>
     </div>
 
     <div id="proBenefits">
@@ -192,7 +182,7 @@
           <p class="redirectButtonText">See all Pro Partner Restaurant</p>
           <img
             class="redirectButtonArrow"
-            src="icons/arrow_drop_down-24px.svg"
+            src={% static 'icons/arrow_drop_down-24px.svg' %}
           />
         </div>
       </div>
@@ -232,8 +222,7 @@
 
         <div class="redirectButton">
           <p class="redirectButtonText">Terms and Conditions</p>
-          <img class="redirectButtonArrow" src={% static
-          'icons/arrow_drop_down-24px.svg' %} />
+          <img class="redirectButtonArrow" src={% static 'icons/arrow_drop_down-24px.svg' %} />
         </div>
       </div>
     </div>
@@ -241,14 +230,11 @@
     <div id="proFooter">
       <div id="footerContainer">
         <div id="proFooterHeader">
-          <img
-            id="footerZomatoLogo"
-            src="https://b.zmtcdn.com/images/logo/zomato_flat_bg_logo.svg"
-          />
+          <p id="footerZomatoLogo">Fusion Food</p>
           <div id="footerLanguage">
-            <img id="footerLanguageImg" src="icons/white_language_icon.svg" />
+            <img id="footerLanguageImg" src={% static 'icons/white_language_icon.svg' %} />
             <p id="footerLanguageText">English</p>
-            <img id="dropDown" src="icons/arrow_drop_down-white-18dp.svg" />
+            <img id="dropDown" src={% static 'icons/arrow_drop_down-white-18dp.svg' %} />
           </div>
         </div>
         <div class="line"></div>
@@ -285,14 +271,14 @@
         <div id="customerSection">
           <div class="sectionCards">
             <p class="cardsHead">About Zomato</p>
-            <p class="cardsLinks" onclick="openFile('aboutus.html')">
+            <p class="cardsLinks" onclick="location.href='{% url 'aboutus' %}'">
               About Us
             </p>
             <p class="cardsLinks">Culture</p>
             <p class="cardsLinks">Blog</p>
-            <p class="cardsLinks">Careers</p>
+            <p class="cardsLinks" onclick="location.href='{% url 'career' %}'">Careers</p>
             <p class="cardsLinks">Report Fraud</p>
-            <p class="cardsLinks">Contact</p>
+            <p class="cardsLinks" onclick="location.href='{% url 'contact' %}'">Contact</p>
           </div>
 
           <div class="sectionCards">
